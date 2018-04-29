@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrapper{
+	width: 50%;
+	margin-left: 25%;
+	padding: 5%;
+	margin-top: 5%;
+	border-radius: 5px
+}
+.erromsg{
+	text-align: center;
+	color: red
+}
+
+
+.parent {
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #0A416B;
+    clear:both;
+}
+.left, .right{
+    float:left;
+    width:15%;
+    border:1px solid #CEDCEA; 
+    padding:5px;
+    margin:10px;
+}
+
+.parent .left {
+	text-align: center;
+}
+.center{
+    float:left;
+    width:65%;
+    border:1px solid #CEDCEA; 
+    padding:5px;
+    margin:10px;
+}
+
+.header{
+	border-bottom: 1px solid #e5e5e5;
+	display: flex;
+	margin: 10px 30px;
+	padding-bottom: 15px
+}
+.name{
+	display:flex; flex:2;
+}
+.created{
+	display:flex; flex:1;
+}
+.members{
+	display:flex; flex:1;
+}
+.action{
+	display:flex; flex:1;
+}
+
+.mainList{
+	display: flex;
+	margin:10px 0px;
+}
+.folderName{
+	display:flex;
+	flex:2;	
+	align-items: center;
+	cursor: pointer;
+}
+.folderName div{
+	margin-right: 15px
+}
+.folderName div img{
+	height:40px;
+	width:40px;
+}
+
+.folderCreated{
+	display:flex; flex:1;	
+}
+.folderShare{
+	display:flex; flex:1;	
+}
+.folderAction{
+	display:flex; flex:1;	
+}
+.fileName{
+	display:flex; flex:2;align-items: center;cursor: pointer;	
+}
+.fileName div{
+	margin-right: 15px
+}
+.fileName div img{
+	height:40px;
+	width:40px;
+}
+.fileCreated{
+	display:flex; flex:1;	
+}
+.fileShare{
+	display:flex; flex:1;	
+}
+.fileAction{
+	display:flex; flex:1;	
+}
+.folderOpened{
+	display: flex;
+	position: relative;
+}
+.folderOpened div{
+	margin:0px 4px;
+}
+
+.back{
+	position: absolute;
+	cursor: pointer;
+	right: 0px;
+	bottom: 4px
+}
+.back img{
+	height: 20px
+}
+
+.right div{
+	cursor: pointer;
+}
+
+.right div:first-child{
+	width: 150px;
+    padding: 5px 0px;
+    background-color: #5bc0de;
+    text-align: center;
+    border-radius: 76px;
+    margin: 10px 0px;
+    font-size: 1.25em;
+    color: white;
+    font-weight: 700;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+	width: 150px;
+    padding: 5px 0px;
+    text-align: center; 
+    border-radius: 41px;
+    background-color: #5bc0de;
+}
+
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+
+.showAction{
+	display: none;
+}
+
+.mainList:hover .folderAction .showAction{
+	display: block;
+}
+
+.submitUser{
+	display: none
+}
+.shareUser{
+	display: flex;
+	height: 50px;
+	border-bottom:1px solid #e5e5e5;
+	align-items: center;
+	padding: 0px 15px;
+	justify-content: space-between;
+}
+.shareUser:hover .submitUser{
+	display: flex;
+}
+.submitClass{
+	margin-left: 10px
+}
+.interest{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.interest div:first-child{
+	display: flex;
+	flex:9;
+}
+
+.interest div:last-child{
+	display: flex;
+	flex:1;
+}
+
+.interest img{
+	height: 20px;
+	width:20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.overFLow{
+	overflow-wrap: break-word;
+}
